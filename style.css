@@ -1,0 +1,101 @@
+
+body{
+background-color: #28272b;
+}
+.wrapper {
+	width:960px;
+	margin: 0 auto 0 auto;
+	background-color: #5c8ff7;
+}
+
+.imageTextPlacement{
+	display: grid;
+	grid-template-columns: 7fr 10px 5fr;
+	grid-template-rows: auto;
+	grid-template-areas: 
+		"li.rt";
+}
+.textImagePlacement{
+	display: grid;
+	grid-template-columns: 5fr 10px 7fr;
+	grid-template-rows: auto;
+	grid-template-areas: 
+		"lt.ri";
+}
+.imageImagePlacement{
+	display: grid;
+	grid-template-columns: 6fr 10px 6fr;
+	grid-template-rows: auto;
+	grid-template-areas: 
+		"li.ri";
+}
+.leftImage{
+	grid-area: li;
+	display: block;
+	margin: auto auto auto auto;
+}
+.rightImage{
+	grid-area: ri;
+	display: block;
+	margin: auto auto auto auto;
+}
+.impactImage{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+.leftText{
+	grid-area: lt;
+	display: block;
+	margin: auto auto auto auto;
+}
+.rightText{
+	grid-area: rt;
+	display: block;
+	margin: auto auto auto auto;
+}
+.RetouchImage {
+	width: 300px;
+	height: auto;
+	position: relative;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+.RetouchImage .img-top {
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 99;
+}
+.RetouchImage:hover .img-top {
+	display: inline;
+}
+
+nav {
+	margin: 0 auto 0 auto;
+}
+
+nav ul{
+	text-align: center;
+}
+
+nav ul li{
+	display: inline-block;
+	margin-right: 20px;
+}
+
+hr{
+	width: 75%;
+	height:5px;
+	border-width:0;
+	color:gray;
+	background-color:gray
+}
+h1{
+	text-align: center;	
+}
+h2{
+	text-align: center;
+}
